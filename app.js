@@ -7,22 +7,22 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Middlewares
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 // Index
-app.get('/',(req,res)=>{
-  res.render("index")
-})
+app.get('/', (req, res) => {
+  res.render('index');
+});
 
 // About
-app.get('/about',(req,res)=>{
-  res.render("about")
-})
+app.get('/about', (req, res) => {
+  res.render('about');
+});
 
 // Add Post
-app.get('/add-post',(req,res)=>{
-  res.render("add_post")
-})
+app.get('/add-post', (req, res) => {
+  res.render('add_post');
+});
 
 const port = 8080;
 
